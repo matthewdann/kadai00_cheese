@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+/* 共通 */
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.subheading {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5.2rem;
+}
+
+.button {
+    background-color: #ffd61a;
+    border: #ffd61a solid .2rem;
+    color: white;
+    width: 30rem;
+    height: 6rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #ffd61a;
+    background-color: #fff;
+}
+
+/* ヘッダー */
+header {
+    padding: 0 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 300px;
+    margin: auto 0;
+}
+
+.header-nav {
+    margin: 5rem 0;
+    font-size: 2.1rem;
+    display: flex;
+}
+
+.header-nav li {
+    margin: 0 0 0 5rem;
+}
+
+/* メイン */
+main {
+    font-size: 1.6rem;
+}
+
+/* メインビジュアル */
+.main-visual {
+    position: relative;
+}
+
+.main-visual-text {
+    width: 800px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-400px, -55px);
+}
+
+.main-visual-text p:first-child {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+.main-visual-text p:last-child {
+    font-size: 3.2rem;
+    margin-top: 3rem;
+}
+
+/* ABOUT */
+#about .heading {
+    color: #ffd61a;
+}
+
+.about__text p {
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 2.4rem;
+}
+
+.about__photos {
+    margin-top: 7.2rem;
+    display: flex;
+}
+
+/* COURSE */
+.course__text p {
+    text-align: center;
+    line-height: 2;
+}
+
+.course-description {
+    margin-top: 5.2rem;
+}
+
+.course-description li {
+    display: flex;
+}
+
+.course-description li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.course-description__photo {
+    width: 50%;
+}
+
+.course-description__text {
+    width: 50%;
+    background-color: #fafafa;
+    position: relative;
+}
+
+.course-description__text dl {
+    width: 43.2rem;
+    position: absolute;
+    top: 9.8rem;
+    left: 5rem;
+}
+
+.course-description__text.left-aligned dl {
+    left: 11.9rem;
+}
+
+.course-description__text dt {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.course-description__text dd {
+    line-height: 2;
+    margin-top: 3.2rem;
+}
+
+/* NEWS */
+#news .heading {
+    color: #ffd61a;
+}
+
+.news-items {
+    margin-top: 0.8rem;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.news-items li {
+    width: 300px;
+    cursor: pointer;
+}
+
+.news-items li:hover {
+    background-color: #ffd61a;
+}
+
+.news__text dt {
+    margin-top: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.more-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16.6rem;
+}
+
+/* ACCESS */
+#access {
+    background-color: #fafafa;
+    margin-top: .7rem;
+    padding-bottom: 4.5rem;
+}
+
+#access .heading {
+    margin-top: 0;
+}
+
+.map {
+    width: 100%;
+}
+
+.corporate-information {
+    display: table;
+    width: 60%;
+    margin: 4.5rem 15% 0 25%;
+}
+
+.corporate-information dl {
+    display: table-row;
+    /* 各<dl>を行として扱う */
+}
+
+.corporate-information dt,
+.corporate-information dd {
+    display: table-cell;
+    padding: 1.5rem 0;
+    border: none;
+}
+
+/* CONTACT */
+.contact__text p {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    margin-bottom: 2.2rem;
+}
+
+.contact-form {
+    display: table;
+    margin: 6.6rem auto 0;
+    border-top: solid #bfbfbf 2px;
+    border-collapse: collapse;
+}
+
+.contact-form dl {
+    display: table-row;
+}
+
+.contact-form dt,
+.contact-form dd {
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: solid #bfbfbf 1px;
+}
+
+.contact-form dt {
+    width: 16rem;
+    padding: 0 6.4rem 0 1.6rem;
+    border-right: solid #bfbfbf 1px;
+    line-height: 1.5;
+}
+
+.contact-form dd {
+    width: 39.2rem;
+    padding: .8rem 0 .8rem .8rem;
+    font-size: 1.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="mail"] {
+    width: 32.2rem;
+    height: 3.2rem;
+    border: solid #cacaca 1px;
+}
+
+.contact-form select {
+    width: 32.8rem;
+    height: 3.6rem;
+    border: solid #cacaca 1px;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-bottom: 2.4rem;
+    margin-right: 1rem;
+}
+
+.contact-form input[type="checkbox"].no-margin {
+    margin-bottom: 0;
+}
+
+.contact-form textarea {
+    border: solid #cacaca 1px;
+}
+
+.submit-button-wrapper {
+    text-align: center;
+    margin: 3rem 0 14rem;
+}
+
+/* フッター */
+footer {
+    background-color: #707070;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer .copyrights {
+    font-size: 1.4rem;
+}
